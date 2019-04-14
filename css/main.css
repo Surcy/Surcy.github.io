@@ -1528,6 +1528,13 @@ pre .javascript .function {
 .fancybox-close:hover {
   border: none;
 }
+.post-copyright {
+  margin: 2em 0 0;
+  padding: 0.5em 1em;
+  border-left: 3px solid #ff1700;
+  background-color: #f9f9f9;
+  list-style: none;
+}
 .sidebar {
   position: fixed;
   right: 0;
@@ -1685,7 +1692,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #2991b5;
+  background: #affae7;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2853,4 +2860,89 @@ pre .javascript .function {
   .post-body {
     text-align: justify;
   }
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+}
+::-webkit-scrollbar-button:start:increment,
+::-webkit-scrollbar-button:end:decrement {
+  display: none;
+}
+::-webkit-scrollbar-corner {
+  display: block;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: rgba(0,0,0,0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  border-radius: 8px;
+  background-color: rgba(0,0,0,0.5);
+}
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb {
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+}
+::-webkit-scrollbar-track:hover {
+  background-color: rgba(0,0,0,0.15);
+}
+::-webkit-scrollbar-button:start {
+  width: 10px;
+  height: 10px;
+  background: url("../images/scrollbar_arrow.png") no-repeat 0 0;
+}
+::-webkit-scrollbar-button:start:hover {
+  background: url("../images/scrollbar_arrow.png") no-repeat -15px 0;
+}
+::-webkit-scrollbar-button:start:active {
+  background: url("../images/scrollbar_arrow.png") no-repeat -30px 0;
+}
+::-webkit-scrollbar-button:end {
+  width: 10px;
+  height: 10px;
+  background: url("../images/scrollbar_arrow.png") no-repeat 0 -18px;
+}
+::-webkit-scrollbar-button:end:hover {
+  background: url("../images/scrollbar_arrow.png") no-repeat -15px -18px;
+}
+::-webkit-scrollbar-button:end:active {
+  background: url("../images/scrollbar_arrow.png") no-repeat -30px -18px;
+}
+.top-scroll-bar {
+  position: fixed;
+  height: 2px;
+  top: 0;
+  left: 0;
+  transition-duration: 0.7s, 0.7s;
+  transiton-property: width, background;
+  display: none;
+  background: #05c1ae;
+  z-index: 99999;
+}
+.posts-expand .post .post-copyright {
+  border-radius: 2px;
+  border-left: 2px solid #05c1ae;
+}
+.sidebar-nav .sidebar-nav-active {
+  color: #05c1ae;
+  border-bottom-color: #05c1ae;
+}
+.sidebar-nav .sidebar-nav-active:hover {
+  color: #05c1ae;
+}
+.sidebar-nav li:hover {
+  color: #05c1ae;
+}
+.post-toc .nav .active > a {
+  color: #05c1ae;
+  border-bottom-color: #05c1ae;
+}
+.post-toc .nav .active-current > a:hover {
+  color: #05c1ae;
 }
